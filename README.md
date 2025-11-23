@@ -4,7 +4,7 @@ This repository contains all required code for the **Post-Discharge AI Medical A
 
 > **Note:**  
 > The FAISS index files (`index.faiss`, `index.pkl`) and the knowledge source PDF (`comprehensive-clinical-nephrology.pdf`) are **not uploaded** due to size limits.  
-> They are available in the **email attachment**.  
+> They are available in the **gdrive link attached below**.  
 > Place them here before running the app:
 >
 > ```
