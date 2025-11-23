@@ -14,6 +14,8 @@ This repository contains all required code for the **Post-Discharge AI Medical A
 > ```
 >
 > Empty placeholder files are included in the repository.
+> ### Download Full FAISS Index Bundle
+- [faiss_index_bundle](<https://drive.google.com/drive/folders/16ToP89xcbpdFOHY03RCGU3mMm0Rvqvrc?usp=sharing>
 
 ---
 
