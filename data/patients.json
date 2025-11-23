@@ -1,0 +1,382 @@
+[
+  {
+    "patient_name": "Tracy Pittman",
+    "discharge_date": "2025-09-05",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Joseph Wyatt",
+    "discharge_date": "2025-06-26",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Erin Rosario",
+    "discharge_date": "2025-09-19",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Amlodipine 5mg daily",
+      "Metoprolol 50mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Joseph Oconnor",
+    "discharge_date": "2025-06-26",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Alicia Berg",
+    "discharge_date": "2025-05-31",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": [
+      "Losartan 50mg daily",
+      "Atorvastatin 20mg nightly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Lucas Price",
+    "discharge_date": "2025-10-22",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Losartan 50mg daily",
+      "Atorvastatin 20mg nightly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Michelle Morris",
+    "discharge_date": "2025-05-21",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Losartan 50mg daily",
+      "Atorvastatin 20mg nightly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Christopher Cameron",
+    "discharge_date": "2025-10-10",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": [
+      "Amlodipine 5mg daily",
+      "Metoprolol 50mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "John Wood",
+    "discharge_date": "2025-09-17",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Anthony Carter",
+    "discharge_date": "2025-08-27",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Alexis Benson",
+    "discharge_date": "2025-09-11",
+    "primary_diagnosis": "Acute Kidney Injury",
+    "medications": [
+      "Losartan 50mg daily",
+      "Atorvastatin 20mg nightly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Angela Boone",
+    "discharge_date": "2025-08-09",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Yvette White",
+    "discharge_date": "2025-07-08",
+    "primary_diagnosis": "Acute Kidney Injury",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Christina Gregory",
+    "discharge_date": "2025-08-07",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Angela Long",
+    "discharge_date": "2025-06-07",
+    "primary_diagnosis": "Acute Kidney Injury",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Anthony Williams",
+    "discharge_date": "2025-10-01",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Bradley Moran",
+    "discharge_date": "2025-11-03",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Stacy Rodriguez",
+    "discharge_date": "2025-11-05",
+    "primary_diagnosis": "Acute Kidney Injury",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Betty Thompson",
+    "discharge_date": "2025-07-04",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Amlodipine 5mg daily",
+      "Metoprolol 50mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Barry Gilbert",
+    "discharge_date": "2025-05-19",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": [
+      "Amlodipine 5mg daily",
+      "Metoprolol 50mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Christopher Morgan",
+    "discharge_date": "2025-10-10",
+    "primary_diagnosis": "Acute Kidney Injury",
+    "medications": [
+      "Amlodipine 5mg daily",
+      "Metoprolol 50mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Christina Fleming",
+    "discharge_date": "2025-07-12",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": [
+      "Amlodipine 5mg daily",
+      "Metoprolol 50mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Sara Henderson",
+    "discharge_date": "2025-10-30",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Andrew Pratt",
+    "discharge_date": "2025-07-08",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Jack Singh",
+    "discharge_date": "2025-09-18",
+    "primary_diagnosis": "Acute Kidney Injury",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Joshua Gordon",
+    "discharge_date": "2025-06-03",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Losartan 50mg daily",
+      "Atorvastatin 20mg nightly"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Elizabeth Chambers",
+    "discharge_date": "2025-08-12",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Prednisone 10mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Ann Johnson",
+    "discharge_date": "2025-09-17",
+    "primary_diagnosis": "Hypertensive Nephropathy",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Adam Walter",
+    "discharge_date": "2025-10-03",
+    "primary_diagnosis": "Nephrotic Syndrome",
+    "medications": [
+      "Lisinopril 10mg daily",
+      "Furosemide 20mg twice daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  },
+  {
+    "patient_name": "Jessica Wilson",
+    "discharge_date": "2025-08-04",
+    "primary_diagnosis": "Chronic Kidney Disease Stage 3",
+    "medications": [
+      "Amlodipine 5mg daily",
+      "Metoprolol 50mg daily"
+    ],
+    "dietary_restrictions": "Low sodium (2g/day), fluid restriction (1.5L/day)",
+    "follow_up": "Nephrology clinic in 2 weeks",
+    "warning_signs": "Swelling, shortness of breath, decreased urine output",
+    "discharge_instructions": "Monitor blood pressure daily, weigh yourself daily"
+  }
+]

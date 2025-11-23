@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+streamlit
+langchain
+openai
+faiss-cpu
+python-dotenv
+pydantic
+sqlalchemy
+requests
+tqdm
+pdfplumber
+nltk
+sentence-transformers
+pymupdf4llm
+faker
+langchain-openai
+langchain-community
+langchain-classic
+duckduckgo-search requests
