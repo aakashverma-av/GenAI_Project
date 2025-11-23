@@ -17,7 +17,7 @@ This repository contains all required code for the **Post-Discharge AI Medical A
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 This POC implements a lightweight **Post-Discharge Medical Assistant** using:
 
@@ -33,7 +33,7 @@ The system is for **demonstration and research only** and clearly displays **“
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ### Key Files
 
@@ -54,7 +54,7 @@ The system is for **demonstration and research only** and clearly displays **“
 
 ---
 
-## 📊 Data Summary
+## Data Summary
 
 ### Patient Dataset
 - 30 synthetic patient discharge summaries  
@@ -71,7 +71,7 @@ The system is for **demonstration and research only** and clearly displays **“
 
 ---
 
-## ⚙️ Architecture & Data Flow
+## Architecture & Data Flow
 
 1. User interacts with **Streamlit UI** (`streamlit_app.py`)
 2. UI sends message to **FastAPI backend**
@@ -88,7 +88,7 @@ The system is for **demonstration and research only** and clearly displays **“
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Create virtual environment
 ```bash
@@ -132,45 +132,5 @@ streamlit run streamlit_app.py --server.port=8501
 
 ---
 
-## ⚠️ Known/Expected Issues
-
-- `requirements.txt` may need cleanup & version pinning  
-- LangChain/OpenAI API versions may differ  
-- FAISS index must match the embedding model  
-- Env vars must be consistent across modules  
-- Tavily API key must be moved into `.env`
-
----
-
-## 📌 Requirement Mapping
-
-### ✔ Data Setup
-- 30+ dummy discharge records  
-- Nephrology reference PDF  
-- SQLite DB  
-- FAISS vector store
-
-### ✔ Multi-Agent System
-- Receptionist → name lookup + routing  
-- Clinical Agent → RAG + web search fallback
-
-### ✔ RAG Pipeline
-- PDF chunking  
-- Embeddings + FAISS  
-- Retrieval + GPT-4o reasoning  
-- Source citations included
-
-### ✔ Web Search
-- Tavily (general queries)  
-- Europe PMC (clinical/research queries)
-
-### ✔ Logging
-- Retrieval logs  
-- Errors  
-- Agent handoffs  
-- DB access tracking
-
-### ✔ Patient Data Retrieval
-- Robust name matching  
 - Handles ambiguous/missing inputs  
 - DB abstraction prevents LLM from direct DB access
