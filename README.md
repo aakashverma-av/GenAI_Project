@@ -1,114 +1,104 @@
-Post-Discharge AI Medical Assistant — POC
+# Post-Discharge AI Medical Assistant — POC
 
-This repository contains all required code for the Post-Discharge AI Medical Assistant (POC).
+This repository contains all required code for the **Post-Discharge AI Medical Assistant (POC)**.
 
-Note:
-The FAISS index files (index.faiss and index.pkl) and the knowledge source PDF (comprehensive-clinical-nephrology.pdf) are not uploaded to GitHub due to size constraints.
-They are available in the email attachment.
-Place them in the following paths before running the app:
+> **Note:**  
+> The FAISS index files (`index.faiss`, `index.pkl`) and the knowledge source PDF (`comprehensive-clinical-nephrology.pdf`) are **not uploaded** due to size limits.  
+> They are available in the **email attachment**.  
+> Place them here before running the app:
+>
+> ```
+> data/faiss_index/index.faiss
+> data/faiss_index/index.pkl
+> data/comprehensive-clinical-nephrology.pdf
+> ```
+>
+> Empty placeholder files are included in the repository.
 
-data/faiss_index/index.faiss
-data/faiss_index/index.pkl
-data/comprehensive-clinical-nephrology.pdf
+---
 
+## 📌 Executive Summary
 
-Empty placeholder files are included in the repository for convenience.
+This POC implements a lightweight **Post-Discharge Medical Assistant** using:
 
-Executive Summary
+- **FastAPI** backend  
+- **Streamlit** frontend  
+- **Retrieval-Augmented Generation (RAG)** with FAISS  
+- **Multi-agent architecture** (Receptionist + Clinical Agent)  
+- **SQLite** patient database  
+- **Tavily → Europe PMC** web-search fallback  
+- **Azure GPT-4o** for clinical reasoning  
 
-This project implements a Proof-of-Concept Post-Discharge Medical Assistant using:
+The system is for **demonstration and research only** and clearly displays **“Not medical advice”** in the UI.
 
-FastAPI backend
+---
 
-Streamlit frontend
+## 📁 Repository Structure
 
-Retrieval-Augmented Generation (RAG) with FAISS
+### Key Files
 
-Multi-agent architecture (Receptionist + Clinical Agent)
+| File | Description |
+|------|-------------|
+| `requirements.txt` | Python dependencies (may require formatting adjustments) |
+| `streamlit_app.py` | Streamlit UI (session state, routing, API calls) |
+| `app/main.py` | FastAPI backend (receptionist + clinical endpoints) |
+| `app/agents.py` | Receptionist agent + clinical agent; routing logic |
+| `app/db_tool.py` | SQLite DB initialization + patient lookup |
+| `app/rag.py` | FAISS loading, embeddings, RetrievalQA chain |
+| `app/index_builder.py` | PDF extraction, chunking, embeddings, FAISS builder |
+| `app/web_search.py` | Tiered web search (Tavily → Europe PMC) |
+| `app/logger_conf.py` | Logging configuration (`app_logs/`) |
+| `data/patients.json` | Seed dataset (30 dummy patient records) |
+| `data/patients.db` | SQLite DB created from JSON |
+| `data/faiss_index/` | Placeholder for FAISS files |
 
-SQLite patient database
+---
 
-Tavily → Europe PMC web-search fallback
+## 📊 Data Summary
 
-Azure GPT-4o for reasoning and clinical dialogue
+### Patient Dataset
+- 30 synthetic patient discharge summaries  
+- Includes diagnosis, medications, follow-up, warning signs, diet, and instructions  
+- Loaded into SQLite at startup
 
-The system is designed solely for demonstration and research and clearly displays “Not medical advice” in the UI.
+### Knowledge Source for RAG
+- `comprehensive-clinical-nephrology.pdf`  
+- Chunked & embedded via `index_builder.py`
 
-Repository Structure
-Key Files
-File	Description
-requirements.txt	Python dependencies (formatting may need adjustments)
-streamlit_app.py	Streamlit frontend (UI, session state, API calls)
-app/main.py	FastAPI backend with receptionist & clinical endpoints
-app/agents.py	Receptionist agent + clinical agent logic and routing
-app/db_tool.py	Patient DB initialization & lookup (SQLite)
-app/rag.py	FAISS loading, embedding setup, RetrievalQA chain
-app/index_builder.py	PDF text extraction, chunking, embedding, FAISS index building
-app/web_search.py	Tiered web search (Tavily → Europe PMC)
-app/logger_conf.py	Logging configuration (stored in app_logs/)
-data/patients.json	Seed data (30 dummy patient discharge records)
-data/patients.db	SQLite DB created from JSON
-data/faiss_index/	FAISS index files (placeholders included)
+### FAISS Vector Store
+- `index.faiss` + `index.pkl`  
+- Prebuilt embeddings + metadata for fast retrieval
 
-Data Summary
-1. Patient Dataset
+---
 
-30 synthetic patient discharge summaries
+## ⚙️ Architecture & Data Flow
 
-Includes: diagnosis, medications, diet, follow-up, warning signs, instructions
+1. User interacts with **Streamlit UI** (`streamlit_app.py`)
+2. UI sends message to **FastAPI backend**
+3. Backend routes message to **Receptionist Agent**
+4. Receptionist:  
+   - asks for patient name  
+   - looks up patient in SQLite  
+   - determines if query is clinical or general
+5. If medical → **handoff to Clinical Agent**
+6. Clinical Agent:  
+   - runs **RAG** (FAISS → nephrology PDF)  
+   - if insufficient → triggers **web search fallback**
+7. All steps logged in `app_logs/`
 
-Loaded into SQLite at app startup
+---
 
-2. Knowledge Source for RAG
+## 🚀 How to Run
 
-comprehensive-clinical-nephrology.pdf
-
-Chunked & embedded into FAISS using index_builder.py
-
-3. FAISS Vector Store
-
-index.faiss and index.pkl
-
-Stores prebuilt embeddings and metadata for fast retrieval
-
-⚙️ Architecture & Data Flow
-
-User interacts with Streamlit UI (streamlit_app.py)
-
-UI sends queries to FastAPI backend
-
-Backend routes messages to Receptionist Agent
-
-Receptionist:
-
-Asks for patient name
-
-Looks up patient in SQLite
-
-Determines if the query is clinical or general
-
-For medical questions:
-
-Receptionist hands off to Clinical Agent
-
-Clinical Agent:
-
-Runs RAG (FAISS → nephrology PDF)
-
-If insufficient → triggers web search fallback (Tavily → Europe PMC)
-
-All interactions + retrieval logs go to app_logs/
-
-How to Run
-1. Set up environment
+### 1. Create virtual environment
+```bash
 python -m venv .venv
-.\.venv\Scripts\activate    # Windows PowerShell
+.\.venv\Scripts\activate     # Windows
 pip install -r requirements.txt
+```
 
-2. Create .env file (required)
-
-Include:
-
+### 2. Create `.env` file
+```
 AZURE_OPENAI_API_KEY=
 AZURE_OPENAI_ENDPOINT=
 AZURE_OPENAI_EMBED_DEPLOYMENT=
@@ -118,71 +108,69 @@ BING_SEARCH_API_KEY=
 FAISS_INDEX_PATH=data/faiss_index
 NEPHRO_PDF_PATH=data/comprehensive-clinical-nephrology.pdf
 SQLITE_DB_PATH=data/patients.db
+```
 
-3. (Optional) Rebuild FAISS index
+### 3. (Optional) Rebuild FAISS index
+```bash
 python app/index_builder.py
+```
 
-4. Initialize patient DB (if needed)
+### 4. Initialize patient DB
+```bash
 python scripts/init_db_from_json.py
+```
 
-5. Start backend
+### 5. Start FastAPI backend
+```bash
 uvicorn app.main:app --reload --port 8000
+```
 
-6. Start frontend
+### 6. Start Streamlit frontend
+```bash
 streamlit run streamlit_app.py --server.port=8501
+```
 
-Known/Expected Issues
+---
 
-requirements.txt may need formatting + version pinning
+## ⚠️ Known/Expected Issues
 
-LangChain/OpenAI API signatures vary across versions
+- `requirements.txt` may need cleanup & version pinning  
+- LangChain/OpenAI API versions may differ  
+- FAISS index must match the embedding model  
+- Env vars must be consistent across modules  
+- Tavily API key must be moved into `.env`
 
-FAISS index must match the embedding model used
+---
 
-Environment variable names must be consistent across modules
+## 📌 Requirement Mapping
 
-Tavily API key is currently a placeholder → must be stored in .env
+### ✔ Data Setup
+- 30+ dummy discharge records  
+- Nephrology reference PDF  
+- SQLite DB  
+- FAISS vector store
 
-Requirement Mapping
-1) Data Setup
+### ✔ Multi-Agent System
+- Receptionist → name lookup + routing  
+- Clinical Agent → RAG + web search fallback
 
-✔ 30+ dummy discharge records
-✔ Nephrology reference PDF
-✔ SQLite DB with lookup
-✔ FAISS index (embeddings + metadata)
+### ✔ RAG Pipeline
+- PDF chunking  
+- Embeddings + FAISS  
+- Retrieval + GPT-4o reasoning  
+- Source citations included
 
-2) Multi-Agent System
+### ✔ Web Search
+- Tavily (general queries)  
+- Europe PMC (clinical/research queries)
 
-Receptionist → name lookup + routing
+### ✔ Logging
+- Retrieval logs  
+- Errors  
+- Agent handoffs  
+- DB access tracking
 
-Clinical Agent → RAG + web search fallback
-
-3) RAG Pipeline
-
-PDF chunking
-
-Embeddings + FAISS
-
-Retrieval + answer generation with GPT-4o
-
-Source citations returned
-
-4) Web Search
-
-Tavily API → general query retrieval
-
-Europe PMC → clinical literature fallback
-
-Used when RAG confidence is low or user asks for “latest research”
-
-5) Logging
-
-Structured logs for retrievals, errors, agent handoffs, and DB calls
-
-6) Patient Data Retrieval
-
-Robust name lookup
-
-Handles missing/ambiguous patients
-
-All DB access securely abstracted from agent logic
+### ✔ Patient Data Retrieval
+- Robust name matching  
+- Handles ambiguous/missing inputs  
+- DB abstraction prevents LLM from direct DB access
